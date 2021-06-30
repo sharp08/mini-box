@@ -1,0 +1,75 @@
+<view class="call-container">
+  <!-- 展示关系文本 -->
+  <view class="string-container">
+    <text>{{placeholder}}</text>
+  </view>
+  <!-- 性别区 -->
+  <view class="bar-container">
+    <text>男</text>
+    <switch class="sex-switch" checked="{{switch}}" bindchange="handleSwitchChange" />
+    <text>女</text>
+  </view>
+  <!-- 选择区 -->
+  <view class="operate-container">
+    <!-- 第一行 -->
+    <view class="ln1">
+      <view class="block">
+        <text>父</text>
+      </view>
+      <view class="block">
+        <text>母</text>
+      </view>
+      <view class="block">
+        <text>删除</text>
+      </view>
+      <view class="block">
+        <text>清空</text>
+      </view>
+    </view>
+    <!-- 第二行 -->
+    <view class="ln2">
+      <view class="block">
+        <text>兄</text>
+      </view>
+      <view class="block">
+        <text>姐</text>
+      </view>
+      <view class="block">
+        <text>夫</text>
+      </view>
+      <view class="block">
+        <text>妻</text>
+      </view>
+    </view>
+    <!-- 第三行 -->
+    <view class="ln3">
+      <view class="left">
+        <view class="sub-ln">
+          <view class="block">
+            <text>弟</text>
+          </view>
+          <view class="block">
+            <text>妹</text>
+          </view>
+          <view class="block">
+            <text>换</text>
+          </view>
+        </view>
+        <view class="sub-ln">
+          <view class="block">
+            <text>子</text>
+          </view>
+          <view class="block">
+            <text>女</text>
+          </view>
+          <view class="block">
+            <text>?</text>
+          </view>
+        </view>
+      </view>
+      <view class="right">
+        <text>合并区</text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -12,6 +12,16 @@ App({
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
       }
     })
+    wx.getSetting({
+      withSubscriptions: true,
+      success: res => {
+        if (res.authSetting["scope.userInfo"]) {
+          wx.getUserInfo({
+            success: res => {}
+          })
+        }
+      }
+    })
   },
   globalData: {
     userInfo: null

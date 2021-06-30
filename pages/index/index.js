@@ -1,4 +1,6 @@
-// index.js
+// 称呼
+const relationShip = require("../../utils/relationship")
+
 // 获取应用实例
 const app = getApp()
 
@@ -18,6 +20,11 @@ Page({
     })
   },
   onLoad() {
+    var options = {
+      text: '爸爸的妈妈的儿子',      
+      sex: 1
+    };
+    console.log(relationShip(options));
     if (wx.getUserProfile) {
       this.setData({
         canIUseGetUserProfile: true
@@ -29,7 +36,6 @@ Page({
     wx.getUserProfile({
       desc: '展示用户信息', // 声明获取用户个人信息后的用途，后续会展示在弹窗中，请谨慎填写
       success: (res) => {
-        console.log(res)
         this.setData({
           userInfo: res.userInfo,
           hasUserInfo: true

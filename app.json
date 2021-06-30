@@ -1,13 +1,26 @@
 {
-  "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
+  "pages": [
+    "pages/call/call",
+    "pages/relation/relation"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/call/call",
+      "text": "称呼",
+      "iconPath": "",
+      "selectedIconPath": ""
+    }, {
+      "pagePath": "pages/relation/relation",
+      "text": "关系",
+      "iconPath": "",
+      "selectedIconPath": ""
+    }]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

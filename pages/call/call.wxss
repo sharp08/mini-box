@@ -1,0 +1,73 @@
+.call-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.string-container {
+  /* background: red; */
+  background: var(--main-bg-color);
+  flex-grow: 1;
+}
+
+.bar-container {
+  background: orange;
+  flex-shrink: 0;
+}
+
+.operate-container {
+  flex-shrink: 0;
+  background: pink;
+}
+
+.operate-container .ln1 {
+  display: flex;
+}
+
+.operate-container .ln1 .block {
+  width: 25vw;
+  height: 200rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.operate-container .ln2 {
+  display: flex;
+}
+
+.operate-container .ln2 .block {
+  width: 25vw;
+  height: 200rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.operate-container .ln3 {
+  display: flex;
+}
+
+.operate-container .ln3 .left {
+  background: orange;
+}
+
+.operate-container .ln3 .left .sub-ln {
+  display: flex;
+}
+
+.operate-container .ln3 .left .sub-ln .block {
+  width: 25vw;
+  height: 200rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.operate-container .ln3 .right {
+  background: gray;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
