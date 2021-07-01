@@ -1,6 +1,8 @@
 /**app.wxss**/
-page{
-  --main-bg-color: brown;
+page {
+  --main--dark-bg-color: #1f1f1f;
+  --main-bg-color: #363636;
+  --white: #e0e0e0;
 }
 
 .container {
@@ -11,4 +13,4 @@ page{
   justify-content: space-between;
   padding: 200rpx 0;
   box-sizing: border-box;
-} 
+}

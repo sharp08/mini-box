@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
-  color: #fff;
+  color: var(--white);
 }
 
 .icon {
@@ -18,7 +18,7 @@
 }
 
 .answer-container {
-  background: lightgreen;
+  background: var(--main--dark-bg-color);
   flex-shrink: 0;
   padding: 3px 10px;
   font-size: 20px;
@@ -28,7 +28,7 @@
 }
 
 .bar-container {
-  background: orange;
+  background: var(--main--dark-bg-color);
   flex-shrink: 0;
   padding-left: 10px;
   padding-top: 3px;
@@ -39,7 +39,7 @@
 
 .operate-container {
   flex-shrink: 0;
-  background: pink;
+  background: var(--main-bg-color);
   font-size: 30px;
   font-weight: bold;
 }
@@ -74,10 +74,6 @@
   display: flex;
 }
 
-.operate-container .ln3 .left {
-  background: orange;
-}
-
 .operate-container .ln3 .left .sub-ln {
   display: flex;
 }
@@ -91,7 +87,6 @@
 }
 
 .operate-container .ln3 .right {
-  background: rgb(219, 34, 34);
   display: flex;
   flex-grow: 1;
   justify-content: center;
