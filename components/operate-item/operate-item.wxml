@@ -1,0 +1,4 @@
+<view class="operate-item">
+  <text wx:if="{{text}}">{{text}}</text>
+  <image class="icon" wx:elif="{{src}}" src="{{src}}"></image>
+</view>

@@ -1,6 +1,6 @@
 /**app.wxss**/
 page {
-  --main--dark-bg-color: #1f1f1f;
+  --main--dark-bg-color: #23262c;
   --main-bg-color: #363636;
   --white: #e0e0e0;
 }

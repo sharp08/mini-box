@@ -1,0 +1,14 @@
+.operate-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--main--dark-bg-color);
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.operate-item .icon {
+  height: 40px;
+  width: 40px;
+}

@@ -23,33 +23,33 @@
   <!-- 选择区 -->
   <view class="operate-container">
     <!-- 第一行 -->
-    <view class="ln1">
+    <view class="ln">
       <view class="block">
-        <text>父</text>
+        <operate-item text="父"></operate-item>
       </view>
       <view class="block">
-        <text>母</text>
+        <operate-item text="母"></operate-item>
       </view>
       <view class="block">
-        <image class="delete icon" src="../../static/imgs/delete.png"></image>
+        <operate-item src="../../static/imgs/delete.png"></operate-item>
       </view>
       <view class="block">
-        <image class="trash icon" src="../../static/imgs/trash.png"></image>
+        <operate-item src="../../static/imgs/trash.png"></operate-item>
       </view>
     </view>
     <!-- 第二行 -->
-    <view class="ln2">
+    <view class="ln">
       <view class="block">
-        <text>兄</text>
+        <operate-item text="兄"></operate-item>
       </view>
       <view class="block">
-        <text>姐</text>
+        <operate-item text="姐"></operate-item>
       </view>
       <view class="block">
-        <text>夫</text>
+        <operate-item text="夫"></operate-item>
       </view>
       <view class="block">
-        <text>妻</text>
+        <operate-item text="妻"></operate-item>
       </view>
     </view>
     <!-- 第三行 -->
@@ -57,29 +57,29 @@
       <view class="left">
         <view class="sub-ln">
           <view class="block">
-            <text>弟</text>
+            <operate-item text="弟"></operate-item>
           </view>
           <view class="block">
-            <text>妹</text>
+            <operate-item text="妹"></operate-item>
           </view>
           <view class="block">
-            <image class="loop icon" src="../../static/imgs/loop.png"></image>
+            <operate-item src="../../static/imgs/loop.png"></operate-item>
           </view>
         </view>
         <view class="sub-ln">
           <view class="block">
-            <text>子</text>
+            <operate-item text="子"></operate-item>
           </view>
           <view class="block">
-            <text>女</text>
+            <operate-item text="女"></operate-item>
           </view>
           <view class="block">
-            <image class="query icon" src="../../static/imgs/query.png"></image>
+            <operate-item src="../../static/imgs/query.png"></operate-item>
           </view>
         </view>
       </view>
       <view class="right">
-        <text>=</text>
+        <operate-item text="="></operate-item>
       </view>
     </view>
   </view>
