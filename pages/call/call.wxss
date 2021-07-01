@@ -3,8 +3,6 @@
   flex-direction: column;
   height: 100vh;
   color: #fff;
-  font-size: 30px;
-  font-weight: bold;
 }
 
 .icon {
@@ -19,6 +17,16 @@
   overflow-y: auto;
 }
 
+.answer-container {
+  background: lightgreen;
+  flex-shrink: 0;
+  padding: 3px 10px;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+
 .bar-container {
   background: orange;
   flex-shrink: 0;
@@ -27,13 +35,13 @@
   padding-bottom: 3px;
   font-size: 20px;
   font-weight: bold;
-  display: flex;
-  align-items: center;
 }
 
 .operate-container {
   flex-shrink: 0;
   background: pink;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .operate-container .ln1 {

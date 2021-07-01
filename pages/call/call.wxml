@@ -3,6 +3,16 @@
   <view class="string-container">
     <text>{{placeholder}}</text>
   </view>
+  <view class="answer-container">
+    <view class="left">
+      <text>我称呼Ta：</text>
+      <text>张三</text>
+    </view>
+    <view class="right">
+      <text>Ta称呼我：</text>
+      <text>张三</text>
+    </view>
+  </view>
   <!-- 性别区 -->
   <view class="bar-container">
     <text class="label">我的性别：</text>

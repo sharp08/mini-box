@@ -11,16 +11,18 @@
   },
   "tabBar": {
     "backgroundColor": "#008cee",
+    "color": "#ffffff",
+    "selectedColor": "#ff9900",
     "list": [{
       "pagePath": "pages/call/call",
       "text": "称呼",
       "iconPath": "static/imgs/chat.png",
-      "selectedIconPath": "static/imgs/chat.png"
+      "selectedIconPath": "static/imgs/chat_ff9900.png"
     }, {
       "pagePath": "pages/relation/relation",
       "text": "关2系",
       "iconPath": "static/imgs/people.png",
-      "selectedIconPath": "static/imgs/people.png"
+      "selectedIconPath": "static/imgs/people_ff9900.png"
     }]
   },
   "style": "v2",
