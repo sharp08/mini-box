@@ -6,7 +6,7 @@ Page({
    */
   data: {
     placeholder: "abc",
-    switch: true
+    switch: false
   },
 
   /**
