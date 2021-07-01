@@ -5,6 +5,7 @@
   </view>
   <!-- 性别区 -->
   <view class="bar-container">
+    <text class="label">我的性别：</text>
     <text>男</text>
     <switch class="sex-switch" checked="{{switch}}" bindchange="handleSwitchChange" />
     <text>女</text>
@@ -20,10 +21,10 @@
         <text>母</text>
       </view>
       <view class="block">
-        <text>删除</text>
+        <image class="delete icon" src="../../static/imgs/delete.png"></image>
       </view>
       <view class="block">
-        <text>清空</text>
+        <image class="trash icon" src="../../static/imgs/trash.png"></image>
       </view>
     </view>
     <!-- 第二行 -->
@@ -52,7 +53,7 @@
             <text>妹</text>
           </view>
           <view class="block">
-            <text>换</text>
+            <image class="loop icon" src="../../static/imgs/loop.png"></image>
           </view>
         </view>
         <view class="sub-ln">
@@ -63,12 +64,12 @@
             <text>女</text>
           </view>
           <view class="block">
-            <text>?</text>
+            <image class="query icon" src="../../static/imgs/query.png"></image>
           </view>
         </view>
       </view>
       <view class="right">
-        <text>合并区</text>
+        <text>=</text>
       </view>
     </view>
   </view>

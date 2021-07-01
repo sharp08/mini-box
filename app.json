@@ -10,16 +10,17 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
+    "backgroundColor": "#008cee",
     "list": [{
       "pagePath": "pages/call/call",
       "text": "称呼",
-      "iconPath": "",
-      "selectedIconPath": ""
+      "iconPath": "static/imgs/chat.png",
+      "selectedIconPath": "static/imgs/chat.png"
     }, {
       "pagePath": "pages/relation/relation",
-      "text": "关系",
-      "iconPath": "",
-      "selectedIconPath": ""
+      "text": "关2系",
+      "iconPath": "static/imgs/people.png",
+      "selectedIconPath": "static/imgs/people.png"
     }]
   },
   "style": "v2",
