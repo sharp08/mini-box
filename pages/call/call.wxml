@@ -1,7 +1,8 @@
 <view class="call-container">
   <!-- 展示关系文本 -->
   <view class="string-container">
-    <text>{{placeholder}}</text>
+    <text>我</text>
+    <text>{{textStr}}</text>
   </view>
   <view class="answer-container">
     <view class="left">
@@ -25,7 +26,7 @@
     <!-- 第一行 -->
     <view class="ln">
       <view class="block">
-        <operate-item text="父"></operate-item>
+        <operate-item text="父" data-text="父" bindtap="handleTap"></operate-item>
       </view>
       <view class="block">
         <operate-item text="母"></operate-item>

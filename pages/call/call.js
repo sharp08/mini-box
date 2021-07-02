@@ -5,8 +5,21 @@ Page({
    * 页面的初始数据
    */
   data: {
-    placeholder: "张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三",
-    switch: false
+    list: [],
+    textStr: "",
+    switch: false,
+    textMap: {
+      "父": "爸爸",
+      "母": "妈妈",
+      "兄": "哥哥",
+      "姐": "姐姐",
+      "夫": "丈夫",
+      "妻": "妻子",
+      "弟": "弟弟",
+      "妹": "妹妹",
+      "子": "儿子",
+      "女": "女儿",
+    }
   },
 
   /**
@@ -48,9 +61,16 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {},
+  // 切换性别
   handleSwitchChange() {
     this.setData({
       switch: !this.data.switch
     })
+  },
+  // 点击关系按钮（父母兄妹...)
+  handleTap(e) {
+    const text = e.target.dataset.text
+    const completeStr = this.data.textMap[text]
+    console.log(completeStr)
   }
 })
