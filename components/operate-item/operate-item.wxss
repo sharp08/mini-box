@@ -8,8 +8,8 @@
   border-radius: 4px;
 }
 
-.operate-item.red {
-  background: red;
+.operate-item.hover {
+  background: rgb(75, 75, 75);
 }
 
 .operate-item .icon {

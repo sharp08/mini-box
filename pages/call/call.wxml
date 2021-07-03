@@ -1,17 +1,17 @@
 <view class="call-container">
   <!-- 展示关系文本 -->
   <view class="string-container">
-    <text>我</text>
+    <text class="me">我</text>
     <text>{{completeStr}}</text>
   </view>
   <view class="answer-container">
-    <view class="left">
+    <view>
       <text>我称呼Ta：</text>
-      <text>张三</text>
+      <text>{{result.iCallTa}}</text>
     </view>
-    <view class="right">
+    <view>
       <text>Ta称呼我：</text>
-      <text>张三</text>
+      <text>{{result.taCallMe}}</text>
     </view>
   </view>
   <!-- 性别区 -->
@@ -20,7 +20,7 @@
     <radio-group bindchange="handleRadioChange" class="custom-radio-group-container">
       <label class="radio-label" wx:for="{{sexList}}" wx:key="value">
         <view>
-          <radio value="{{item.value}}" checked="{{item.checked}}" />
+          <radio disabled="{{item.disabled}}" value="{{item.value}}" checked="{{item.checked}}" />
         </view>
         <view>{{item.text}}</view>
       </label>
@@ -37,10 +37,10 @@
         <operate-item text="母" data-text="母" bindtap="handleTap"></operate-item>
       </view>
       <view class="block">
-        <operate-item src="../../static/imgs/delete.png"></operate-item>
+        <operate-item bindtap="handleDel" src="../../static/imgs/delete_ff9900.png"></operate-item>
       </view>
       <view class="block">
-        <operate-item src="../../static/imgs/trash.png"></operate-item>
+        <operate-item bindtap="handleClear" src="../../static/imgs/trash_red.png"></operate-item>
       </view>
     </view>
     <!-- 第二行 -->
@@ -52,40 +52,27 @@
         <operate-item text="姐" data-text="姐" bindtap="handleTap"></operate-item>
       </view>
       <view class="block">
-        <operate-item text="夫" data-text="夫" bindtap="handleTap"></operate-item>
+        <operate-item text="夫" data-text="夫" class="{{sexLimit==='1'?'disabled':''}}" bindtap="handleTap">
+        </operate-item>
       </view>
       <view class="block">
-        <operate-item text="妻" data-text="妻" bindtap="handleTap"></operate-item>
+        <operate-item text="妻" data-text="妻" class="{{sexLimit==='0'?'disabled':''}}" bindtap="handleTap">
+        </operate-item>
       </view>
     </view>
     <!-- 第三行 -->
-    <view class="ln3">
-      <view class="left">
-        <view class="sub-ln">
-          <view class="block">
-            <operate-item text="弟" data-text="弟" bindtap="handleTap"></operate-item>
-          </view>
-          <view class="block">
-            <operate-item text="妹" data-text="妹" bindtap="handleTap"></operate-item>
-          </view>
-          <view class="block">
-            <operate-item src="../../static/imgs/loop.png"></operate-item>
-          </view>
-        </view>
-        <view class="sub-ln">
-          <view class="block">
-            <operate-item text="子" data-text="子" bindtap="handleTap"></operate-item>
-          </view>
-          <view class="block">
-            <operate-item text="女" data-text="女" bindtap="handleTap"></operate-item>
-          </view>
-          <view class="block">
-            <operate-item src="../../static/imgs/query.png"></operate-item>
-          </view>
-        </view>
+    <view class="ln">
+      <view class="block">
+        <operate-item text="弟" data-text="弟" bindtap="handleTap"></operate-item>
       </view>
-      <view class="right">
-        <operate-item text="="></operate-item>
+      <view class="block">
+        <operate-item text="妹" data-text="妹" bindtap="handleTap"></operate-item>
+      </view>
+      <view class="block">
+        <operate-item text="子" data-text="子" bindtap="handleTap"></operate-item>
+      </view>
+      <view class="block">
+        <operate-item text="女" data-text="女" bindtap="handleTap"></operate-item>
       </view>
     </view>
   </view>

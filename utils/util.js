@@ -14,6 +14,11 @@ const formatNumber = n => {
   return n[1] ? n : `0${n}`
 }
 
+const IS_EMPTY = any => {
+  return any === null || any === undefined || any.length === 0
+}
+
 module.exports = {
-  formatTime
+  formatTime,
+  IS_EMPTY
 }

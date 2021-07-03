@@ -5,6 +5,10 @@
   color: var(--white);
 }
 
+.disabled {
+  color: #333;
+}
+
 .icon {
   height: 40px;
   width: 40px;
@@ -17,14 +21,17 @@
   overflow-y: auto;
 }
 
+.string-container .me {
+  font-size: 20px;
+  margin-right: 8px;
+}
+
 .answer-container {
   background: var(--main--dark-bg-color);
   flex-shrink: 0;
   padding: 3px 10px;
   font-size: 20px;
   font-weight: bold;
-  display: flex;
-  justify-content: space-between;
 }
 
 .bar-container {
@@ -73,28 +80,6 @@
   padding-right: 2rpx;
 }
 
-.operate-container .ln3 {
-  display: flex;
-}
-
-.operate-container .ln3 .left .sub-ln {
-  display: flex;
-}
-
-.operate-container .ln3 .left .sub-ln:last-child {
+.operate-container .ln:last-child {
   padding-bottom: 2rpx;
-}
-
-.operate-container .ln3 .left .sub-ln .block {
-  width: 25vw;
-  height: 200rpx;
-  padding-top: 2rpx;
-  padding-left: 2rpx;
-  box-sizing: border-box;
-}
-
-.operate-container .ln3 .right {
-  width: 25vw;
-  padding: 2rpx;
-  box-sizing: border-box;
 }
