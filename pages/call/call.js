@@ -1,13 +1,19 @@
+const relationship = require("../../utils/relationship")
 // pages/call/call.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-    list: [],
-    textStr: "",
-    switch: false,
+    list: [], //  存储点击的关系，用来生成 completeStr
+    completeStr: "", //  展示在界面的完整 str
+    sexList: [{
+        text: "男",
+        value: "1",
+        checked: true
+      },
+      {
+        text: "女",
+        value: "0"
+      },
+    ],
     textMap: {
       "父": "爸爸",
       "母": "妈妈",
@@ -19,58 +25,35 @@ Page({
       "妹": "妹妹",
       "子": "儿子",
       "女": "女儿",
-    }
+    },
+    result: []
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {},
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {},
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {},
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {},
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {},
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {},
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {},
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {},
   // 切换性别
-  handleSwitchChange() {
+  handleRadioChange(e) {
+    let temp = this.data.sexList
+    for (let i = 0; i < temp.length; i++) {
+      temp[i].checked = temp[i].value === e.detail.value
+    }
     this.setData({
-      switch: !this.data.switch
+      sexList: temp
     })
   },
   // 点击关系按钮（父母兄妹...)
   handleTap(e) {
     const text = e.target.dataset.text
-    const completeStr = this.data.textMap[text]
-    console.log(completeStr)
+    const str = this.data.textMap[text]
+    this.data.list.push(str)
+    const completeStr = this.data.list.join("的")
+    this.setData({
+      completeStr
+    })
+    const sex = this.data.sexList.find(item => item.checked).value
+    const option = {
+      text: completeStr,
+      sex: Number(sex)
+    }
+    console.log(option)
+    const r = relationship(option)
+    console.log(r)
   }
 })
