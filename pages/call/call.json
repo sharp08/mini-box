@@ -2,5 +2,5 @@
   "usingComponents": {
     "operate-item": "/components/operate-item/operate-item"
   },
-  "navigationBarTitleText": "称呼计算"
+  "navigationBarTitleText": "亲属称呼"
 }

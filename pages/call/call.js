@@ -146,4 +146,13 @@ Page({
     })
     this.getRelation()
   },
+  onShareAppMessage(res) {
+    console.log(res)
+    return {
+      title: "亲属称呼",
+      path: "/pages/call/call",
+      imageUrl: '../../static/imgs/code.png'
+    }
+  },
+  onShareTimeline() {}
 })
