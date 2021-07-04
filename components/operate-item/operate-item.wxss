@@ -1,0 +1,18 @@
+.operate-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--main--dark-bg-color);
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.operate-item.hover {
+  background: rgb(75, 75, 75);
+}
+
+.operate-item .icon {
+  height: 40px;
+  width: 40px;
+}
